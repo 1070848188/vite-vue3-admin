@@ -18,7 +18,8 @@ export const GlobalStore = defineStore('GlobalState', {
         isNeedBreadcrumbIcon: true,
         isNeedTabs: true,
         isNeedTabsIcon: true,
-        primary: DEFAULT_PRIMARY_COLOR
+        primary: DEFAULT_PRIMARY_COLOR,
+        isDark: false
       }
     };
   },

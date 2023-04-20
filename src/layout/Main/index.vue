@@ -35,7 +35,7 @@ const themeConfig = computed<ThemeConfigState>(() => globalStore.themeConfig);
   height: 100%;
 
   &-content {
-    background-color: #f2f3f5;
+    background-color: var(--el-bg-color-page);
     padding: 10px 20px;
   }
 }

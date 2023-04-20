@@ -54,6 +54,7 @@ export interface ThemeConfigState {
   isNeedTabs: boolean; // 是否需要tabs
   isNeedTabsIcon: boolean; // 是否需要tabs图标
   primary: string; // 全局颜色风格
+  isDark: boolean; // 是否进入暗黑模式
 }
 
 /**

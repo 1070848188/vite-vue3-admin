@@ -10,10 +10,15 @@
         <el-icon><Setting /></el-icon>
         全局主题
       </el-divider>
-      <!-- 菜单折叠 -->
+      <!-- 主题颜色 -->
       <div class="drawer-item">
         <span>主题颜色</span>
         <el-color-picker v-model="themeConfig.primary" @change="changePrimaryColor" />
+      </div>
+      <!-- 暗黑模式 -->
+      <div class="drawer-item">
+        <span>暗黑模式</span>
+        <el-switch v-model="themeConfig.isDark" @change="swithDark" />
       </div>
     </div>
     <!-- 全局主题结束 -->
@@ -69,7 +74,7 @@ const store = GlobalStore();
 const themeConfig = computed<ThemeConfigState>(() => store.themeConfig);
 
 // hooks方法引入
-const { changePrimaryColor } = useTheme();
+const { changePrimaryColor, swithDark } = useTheme();
 </script>
 
 <style lang="scss" scoped>

@@ -1,0 +1,1 @@
+import{_ as o,c as s,o as t,p as _,h as c,b as n}from"./index-6fd20277.js";const d={},a=e=>(_("data-v-28b49352"),e=e(),c(),e),p={class:"notFound"},r=a(()=>n("h2",null,"notFound",-1)),i=[r];function l(e,u){return t(),s("div",p,i)}const f=o(d,[["render",l],["__scopeId","data-v-28b49352"]]);export{f as default};

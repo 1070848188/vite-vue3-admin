@@ -1,0 +1,30 @@
+{
+  // - extends 继承，因为开发者不需要关心vue对于ts的默认配置，所以将ts配置放到@vue源码中
+  "extends": "@vue/tsconfig/tsconfig.web.json",
+  // - 哪些文件需要ts进行编译
+  "include": [
+    "src/env.d.ts",
+    "src/**/*",
+    "src/**/*.vue",
+    "auto-imports.d.ts",
+    "components.d.ts",
+    "src/**/*.ts",
+    "src/**/*.d.ts"
+  ],
+  // - ts配置
+  "compilerOptions": {
+    // - 设置ts的根路径
+    "baseUrl": ".",
+    // - 设置ts别名，1. ts文件识别@ 2. 为了让vscode更好的解析
+    "paths": {
+      "@/*": ["./src/*"]
+    }
+  },
+  // - 引入文件
+  "references": [
+    {
+      // - vue不推荐修改本文件，但项目中需要特殊的ts配置，那就去tsconfig.node.json去修改
+      "path": "./tsconfig.node.json"
+    }
+  ]
+}

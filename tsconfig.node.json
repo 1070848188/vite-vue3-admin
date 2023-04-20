@@ -1,0 +1,12 @@
+// - 1. 给开发者进行特殊配置的
+// - 2. 为vite的编辑做一些配置
+{
+  "extends": "@vue/tsconfig/tsconfig.node.json",
+  "include": ["vite.config.*", "vitest.config.*", "cypress.config.*", "playwright.config.*"],
+  "compilerOptions": {
+    // - 需要这个属性才可以合并到tsconfig.json中
+    "composite": true,
+    // - 可能会在node环境中运行
+    "types": ["node"]
+  }
+}

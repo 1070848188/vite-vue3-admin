@@ -34,6 +34,7 @@ export default defineConfig({
       ]
     })
   ],
+  base: './', // 将根目录换成相对路径
   resolve: {
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url))

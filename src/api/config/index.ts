@@ -5,7 +5,7 @@ export const TIME_OUT = 2000;
 // 区分开发环境和生产环境
 const baseUrlData: BaseType = {
   development: '/api',
-  production: ''
+  production: 'https://mock.mengxuegu.com/mock/629d727e6163854a32e8307e'
 };
 
 // 获取当前与运行环境

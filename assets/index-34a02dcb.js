@@ -1,0 +1,1 @@
+import{_ as s,c as t,o as _,p as o,h as c,b as a}from"./index-20b75c58.js";const d={},n=e=>(o("data-v-319a8465"),e=e(),c(),e),p={class:"system-user"},r=n(()=>a("h2",null,"system-user",-1)),i=[r];function l(e,u){return _(),t("div",p,i)}const f=s(d,[["render",l],["__scopeId","data-v-319a8465"]]);export{f as default};
